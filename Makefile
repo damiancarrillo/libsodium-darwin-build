@@ -45,7 +45,6 @@ build/%/lib/libsodium.a: libsodium
 	cd $(PREFIX)/libsodium && \
 		./autogen.sh && \
 		./configure $(CONFIGURE_HOST) --disable-shared --prefix=$(PREFIX) && \
-		$(MAKE) clean && \
 		$(MAKE) install
 
 clean:
